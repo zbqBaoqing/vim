@@ -2,7 +2,7 @@
 
 效果展示：
 
-https://github.com/zbqyexingkong/vim/blob/master/shotimage.PNG
+![image](https://github.com/zbqyexingkong/vim/blob/master/shotimage.PNG)
 
 
 **需自己手动安装**(:以ubuntu为例)
