@@ -1,5 +1,10 @@
 ##vim安装说明
 
+效果展示：
+
+https://github.com/zbqyexingkong/vim/blob/master/shotimage.PNG
+
+
 **需自己手动安装**(:以ubuntu为例)
 
 1.安装vim $: _sudo apt-get install vim_
