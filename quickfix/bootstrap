@@ -1,0 +1,13 @@
+#!/bin/sh
+
+rm -rf *.cache config
+mkdir config
+touch README NEWS AUTHORS INSTALL ChangeLog
+
+set -ex
+libtoolize # work around issue where autoreconf on rhel/centos 5.7 does not always run this
+autoreconf -i -Wall,no-obsolete
+rm -rf autom4te.cache config.h.in~
+set +ex
+
+echo "Now run configure with any arguments necessary"
