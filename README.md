@@ -26,7 +26,7 @@
 9.$: _rm ~/vim/ -fr_
 
  **c.vim插件设置**<br\>
-   其中如果你要改变 AUTHOR 和 COMPANY的值, 要修改模板文件 ~/.vim/c-support/templates/Templates <br \>
+   其中如果你要改变 AUTHOR 和 COMPANY的值, 要修改模板文件 ~/.vim/bundle/c.vim/c-support/templates/Templates <br \>
    $： vim ~/.vim/bundle/c.vim/c-support/templates/Templates <br \>
   |AUTHOR|    = yexingkong(zhangbaoqing) <br\>
   |EMAIL|     = abqyexingkong@gmail.com <br\>
