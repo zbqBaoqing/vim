@@ -27,7 +27,7 @@
 
  **c.vim插件设置**<br\>
    其中如果你要改变 AUTHOR 和 COMPANY的值, 要修改模板文件 ~/.vim/c-support/templates/Templates <br \>
-   $： vim ~/.vim/c-support/templates/Templates <br \>
+   $： vim ~/.vim/bundle/c.vim/c-support/templates/Templates <br \>
   |AUTHOR|    = yexingkong(zhangbaoqing) <br\>
   |EMAIL|     = abqyexingkong@gmail.com <br\>
   |COMPANY|   = Xi'an University of post and Telecommunications <br \>
