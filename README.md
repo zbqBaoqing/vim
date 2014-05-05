@@ -1,5 +1,12 @@
 ##vim安装说明
 
+**快速安装方法**
+*打开终端，执行下面的命令就自动安装好了:*
+wget https://github.com/zbqyexingkong/vim/blob/master/setup.sh && bash setup.sh
+
+
+
+
 效果展示：
 
 ![shotimage.PNG](shotimage.PNG)
