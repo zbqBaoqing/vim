@@ -1,21 +1,21 @@
 c.vim插件可以自动插入注释与代码，详细使用方法为：
 
-1.在~/.vim/c-support/templates/Templates可以设置版权信息，如作者、信箱、版权归属等，新建.c或.cpp文件是可以看到，并且列出了使用模板文件位置，可以自己编辑
-2.\if 插入一般函数
-3.\im 插入主函数
-4.\cfu 插入函数头,即函数说明
-5.\cfr 插入一个frame comment,可以用来写变量说明
-6.\p< 插入一个include , 并且把光标放在<>中
-7.\rc 保存并编译
-8.\rr 运行
-9.\nr 可以在~/.vim/c-support/codesnippets中编写一些预编译代码或者代码块,通过此命令使用
+1.在~/.vim/c-support/templates/Templates可以设置版权信息，如作者、信箱、版权归属等，新建.c或.cpp文件是可以看到，并且列出了使用模板文件位置，可以自己编辑 <br/>
+2.\if 插入一般函数<br/>
+3.\im 插入主函数<br/>
+4.\cfu 插入函数头,即函数说明<br/>
+5.\cfr 插入一个frame comment,可以用来写变量说明<br/>
+6.\p< 插入一个include , 并且把光标放在<>中<br/>
+7.\rc 保存并编译<br/>
+8.\rr 运行<br/>
+9.\nr 可以在~/.vim/c-support/ codesnippets中编写一些预编译代码或者代码块,通过此命令使用 <br/>
 
 ---------------------附:详细的c.vim hotkey-------------------------
-
+<pre>
 -- Help ---------------------------------------------------------------
 
-  \hm       show manual for word under the cursor (n,i)
-  \hp       show plugin help                      (n,i)
+  \hm       show manual for word under the cursor (n,i) 
+  \hp       show plugin help                      (n,i) 
 
   -- Comments -----------------------------------------------------------
 
@@ -50,7 +50,7 @@ c.vim插件可以自动插入注释与代码，详细使用方法为：
   -- Preprocessor -------------------------------------------------------
 
   \p<       #include <>                         (n,i)
-  \p"       #include ""                         (n,i)
+  \p       #include ""                         (n,i)
   \pd       #define                             (n,i)
   \pu       #undef                              (n,i)
   \pie      #if  #else #endif                   (n,v,i)
@@ -135,3 +135,4 @@ c.vim插件可以自动插入注释与代码，详细使用方法为：
   \rs       show plugin settings                (n,i)
   \rx       set xterm size                      (n, only Linux/UNIX & GUI)
   \ro       change output destination           (n,i)
+  </pre>
