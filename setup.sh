@@ -13,7 +13,9 @@ if which brew >/dev/null;then
 fi
 
 sudo easy_install -ZU autopep8 twisted
-cd /usr/include/ && sudo ctags -R --fields=+ls && cd
+cd /usr/include/ 
+sudo ctags -R --fields=+ls 
+cd ~/
 mv -f ~/vim ~/vim_old
 cd ~/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 cd ~/ && git clone https://github.com/zbqyexingkong/vim.git
@@ -23,6 +25,6 @@ rm -fr ~/vim/
 echo "zbqyexingkong正在努力为您安装bundle程序" > zbqyeingkong
 echo "安装完毕将自动退出" >> zbqyexingkong
 echo "请耐心等待" >> zbqyexingkong
-vim install -c "BundleInstall" -c "q" -c "q"
-rm install
+vim setup -c "BundleInstall" -c "q" -c "q"
+rm setup
 echo "安装完成"
