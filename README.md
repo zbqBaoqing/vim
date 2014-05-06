@@ -1,6 +1,6 @@
 ##vim安装说明
 
-**快速安装方法**
+**快速安装方法**<br/>
 打开终端，执行下面的命令就自动安装好了:
 
 `wget https://raw.github.com/zbqyexingkong/vim/master/setup.sh -O zbq_vim_setup.sh && bash zbq_vim_setup.sh`
