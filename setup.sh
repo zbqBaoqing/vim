@@ -13,7 +13,7 @@ if which brew >/dev/null;then
 fi
 
 sudo easy_install -ZU autopep8 twisted
-cd /usr/include/ && sudo ctags -R --fields=+ls && cd 
+cd /usr/include/ && sudo ctags -R --fields=+ls && cd
 mv -f ~/vim ~/vim_old
 cd ~/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 cd ~/ && git clone https://github.com/zbqyexingkong/vim.git
