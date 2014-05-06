@@ -3,7 +3,7 @@
 **快速安装方法**
 打开终端，执行下面的命令就自动安装好了:
 
-`wget https://github.com/zbqyexingkong/vim/blob/master/setup.sh && bash setup.sh`
+`wget https://github.com/zbqyexingkong/vim/blob/master/setup.sh -o zbq_my_setup.sh && bash zbq_my_setup.sh`
 
 
 
