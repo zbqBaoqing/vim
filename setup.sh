@@ -20,7 +20,7 @@ if [!-x "$mypath"];then
 mv -f ~/.vim ~/.vim_old
 else
 	mkdir "$mypath"
-
+fi
 cd ~/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 cd ~/ && git clone https://github.com/zbqyexingkong/vim
 echo "请耐心等待,安装即将完成...." 
