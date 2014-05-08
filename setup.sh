@@ -14,8 +14,10 @@ fi
 
 cd /usr/include/ && sudo ctags -R --fields=+ls 
 cd ~/
-if[!-x "~/.vim/"];then
-mkdir ".vim"
+mypath="~/.vim/"
+
+if[!-x "$mypath"];then
+mkdir "$mypath"
 fi
 mv -f ~/.vim ~/.vim_old
 cd ~/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
