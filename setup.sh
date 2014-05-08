@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "安装将花费一定时间，请耐心等待直到安装完成^_^"
 if which apt-get >/dev/null; then
-	sudo apt-get install -y vim vim-gnome ctags xclip astyle python-setuptools python-dev git 
+	sudo apt-get install -y vim vim-gnome ctags  git 
 elif which yum >/dev/null; then
-	sudo yum install -y gcc vim git ctags xclip astyle python-setuptools python-devel	
+	sudo yum install -y gcc vim git ctags 	
 fi
 
 ##Add HomeBrew support on  Mac OS
@@ -12,9 +12,7 @@ if which brew >/dev/null;then
     brew install vim ctags git astyle
 fi
 
-sudo easy_install -ZU autopep8 twisted
-cd /usr/include/ 
-sudo ctags -R --fields=+ls 
+cd /usr/include/ && sudo ctags -R --fields=+ls 
 cd ~/
 mv -f ~/vim ~/vim_old
 cd ~/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
