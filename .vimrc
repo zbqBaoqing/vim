@@ -148,7 +148,7 @@ endfunc
 """quickfix插件的配置,<M-j> --> <Alt+j>
 "按下F6，执行make编译程序，并打开quickfix窗口，显示编译信息
 noremap <F6> :make<CR><CR><CR> :copen<CR><CR>
-" 按下Alt+j，光标移到上一个错误所在的行
+" 按下Alt+k，光标移到上一个错误所在的行
 map <M-k> :cp<CR>
 " 按下Alt+j，光标移到下一个错误所在的行
 map <M-j> :cn<CR>
@@ -194,7 +194,7 @@ let g:syntastic_phpcs_conf = "--tab-width=4 --standard=CodeIgniter"   ""phpcs，
 let g:winManagerWindowLayout='FileExplorer|TagList'
 let g:winManagerWindowLayout='FileExplorer|MiniBufferExplorer'
 let g:winManagerWidth=26
-nmap yy :WMToggle<CR>  	"vim普通模式：调出winmanager的文件浏览器 
+nmap ty :WMToggle<CR>  	"vim普通模式：调出winmanager的文件浏览器 
 map tt :TlistToggle<CR>   "调出Taglist的符号浏览器 
 
 
@@ -227,11 +227,13 @@ let g:EchoFuncShowOnStatus = 1
 inoremap <F10> <ESC>:A<CR>	"在头文件和源文件的切换  
 noremap <F10>  :A<CR>  
 
+"ctrl + F10
 inoremap <C-F10> <ESC>:AS<CR> "上下分割窗口
 noremap <C-F10> :AS<CR>
 
-inoremap <S-F10> <ESC>:AV<CR> "左右分割窗口
-noremap <S-F10> :AV<CR> 
+"shift + f
+inoremap <S-F> <ESC>:AV<CR> "左右分割窗口
+noremap <S-F> :AV<CR> 
 
 
 
