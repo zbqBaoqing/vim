@@ -17,15 +17,18 @@ cd ~/
 mypath="~/.vim/"
 
 if [!-x "$mypath"];then
-mkdir "$mypath"
-fi
 mv -f ~/.vim ~/.vim_old
+else
+	mkdir "$mypath"
+
 cd ~/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-cd ~/ && wget https://raw.githubusercontent.com/zbqyexingkong/vim/master/.vimrc 
-#git clone https://github.com/zbqyexingkong/vim.git
-echo "zbqyexingkong正在努力为您安装bundle程序"
-echo "安装完毕将自动退出" >> zbqyexingkong
-echo "请耐心等待" >> zbqyexingkong
-vim zbqyexingkong -c "BundleInstall" -c "q" -c "q"
-rm zbqyexingkong zbq_vim_setup.sh
-echo "安装完成"
+cd ~/ && git clone https://github.com/zbqyexingkong/vim
+echo "请耐心等待,安装即将完成...." 
+mv ~/vim/.vimrc ~/
+mv ~/vim/* ~/.vim/bundle/
+rm ~/vim/ -fr
+#echo "zbqyexingkong正在努力为您安装bundle程序" > zbqyexingkong
+#echo "安装完毕将自动退出" >> zbqyexingkong
+#vim zbqyexingkong -c "BundleInstall" -c "q" -c "q"
+#rm zbqyexingkong zbq_vim_setup.sh
+echo "安装完成^_^"
