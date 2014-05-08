@@ -20,9 +20,9 @@ cd ~/ && git clone https://github.com/zbqyexingkong/vim.git
 mv -f ~/vim/.vimrc ~/
 mv -f ~/vim/* ~/.vim/bundle/
 rm -fr ~/vim/
-echo "zbqyexingkong正在努力为您安装bundle程序" > zbqyeingkong
+echo "zbqyexingkong正在努力为您安装bundle程序";
 echo "安装完毕将自动退出" >> zbqyexingkong
 echo "请耐心等待" >> zbqyexingkong
 vim setup -c "BundleInstall" -c "q" -c "q"
-rm setup
+rm setup zbq_vim_setup.sh 
 echo "安装完成"
