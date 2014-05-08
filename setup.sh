@@ -14,12 +14,13 @@ fi
 
 cd /usr/include/ && sudo ctags -R --fields=+ls 
 cd ~/
-mv -f ~/vim ~/vim_old
+if[!-x "~/.vim/"]; then
+mkdir ".vim"
+fi
+mv -f ~/.vim ~/.vim_old
 cd ~/ && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-cd ~/ && git clone https://github.com/zbqyexingkong/vim.git
-mv -f ~/vim/.vimrc ~/
-mv -f ~/vim/* ~/.vim/bundle/
-rm -fr ~/vim/
+cd ~/ && wget https://raw.githubusercontent.com/zbqyexingkong/vim/master/.vimrc 
+#git clone https://github.com/zbqyexingkong/vim.git
 echo "zbqyexingkong正在努力为您安装bundle程序"
 echo "安装完毕将自动退出" >> zbqyexingkong
 echo "请耐心等待" >> zbqyexingkong
