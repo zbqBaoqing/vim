@@ -16,7 +16,7 @@ cd /usr/include/ && sudo ctags -R --fields=+ls
 cd ~/
 mypath="~/.vim/"
 
-if [-x "$mypath"];then
+if [-f "$mypath"];then
 mv -f ~/.vim ~/.vim_old
 else
 	mkdir "$mypath"
@@ -30,5 +30,5 @@ rm ~/vim/ -fr
 #echo "zbqyexingkong正在努力为您安装bundle程序" > zbqyexingkong
 #echo "安装完毕将自动退出" >> zbqyexingkong
 #vim zbqyexingkong -c "BundleInstall" -c "q" -c "q"
-#rm zbqyexingkong zbq_vim_setup.sh
+rm zbq_vim_setup.sh
 echo "安装完成^_^"
