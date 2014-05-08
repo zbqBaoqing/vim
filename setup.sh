@@ -23,6 +23,6 @@ rm -fr ~/vim/
 echo "zbqyexingkong正在努力为您安装bundle程序";
 echo "安装完毕将自动退出" >> zbqyexingkong
 echo "请耐心等待" >> zbqyexingkong
-vim setup -c "BundleInstall" -c "q" -c "q"
-rm setup zbq_vim_setup.sh 
+vim zbqyexingkong -c "BundleInstall" -c "q" -c "q"
+rm zbqyexingkong 
 echo "安装完成"
