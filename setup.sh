@@ -14,7 +14,7 @@ fi
 
 cd /usr/include/ && sudo ctags -R --fields=+ls 
 cd ~/
-if[!-x "~/.vim/"]; then
+if[!-x "~/.vim/"];then
 mkdir ".vim"
 fi
 mv -f ~/.vim ~/.vim_old
