@@ -24,5 +24,5 @@ echo "zbqyexingkong正在努力为您安装bundle程序"
 echo "安装完毕将自动退出" >> zbqyexingkong
 echo "请耐心等待" >> zbqyexingkong
 vim zbqyexingkong -c "BundleInstall" -c "q" -c "q"
-rm zbqyexingkong 
+rm zbqyexingkong zbq_vim_setup.sh
 echo "安装完成"
