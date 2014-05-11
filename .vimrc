@@ -42,7 +42,7 @@ set viminfo+=!
 " 带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,-
 set ruler                   " 打开状态栏标尺
-"set cursorcolumn	 "垂直对齐线
+set cursorcolumn	 "垂直对齐线
 set cursorline              " 突出显示当前行
 set magic                   " 设置魔术
 set showmatch		" 高亮显示匹配的括号
