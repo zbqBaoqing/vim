@@ -231,9 +231,9 @@ noremap <F10>  :A<CR>
 inoremap <C-F10> <ESC>:AS<CR> "上下分割窗口
 noremap <C-F10> :AS<CR>
 
-"shift + f
-inoremap <S-F> <ESC>:AV<CR> "左右分割窗口
-noremap <S-F> :AV<CR> 
+"ctrl + a
+inoremap <C-a> <ESC>:AV<CR> "左右分割窗口
+noremap <C-a> :AV<CR> 
 
 
 
